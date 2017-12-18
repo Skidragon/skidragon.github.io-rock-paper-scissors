@@ -7,6 +7,12 @@
   margin-left: 20px;
 }
 
+.player-highlight:hover {
+  background-color: red;
+  border-radius: 10px;
+}
+
+
 header#characters-container {
   text-align: center;
 }
@@ -25,6 +31,10 @@ h1 {
   display: inline;
   font-size: 50px;
 }
+#start-match-btn {
+  display: block;
+  margin: 0 auto;
+}
   a {
   text-decoration: none;
   color: blue;
@@ -32,7 +42,7 @@ h1 {
   a:hover {
     text-decoration: underline;
   }
-  main#battle-arena {
+  main#battle-arena-container {
     text-align: center;
     margin: 50px 10px 10px 10px;
   }
