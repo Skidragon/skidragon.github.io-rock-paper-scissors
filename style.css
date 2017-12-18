@@ -1,0 +1,38 @@
+
+/*Browser Window size: 1311 x 601*/
+
+.player-sizes {
+  width: 150px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+header#characters-container {
+  text-align: center;
+}
+
+body {
+  margin: 10px 10px 10px 10px;
+  background: #fffeb5;
+}
+
+nav > li {
+  padding: 10px 10px 0px 0px;
+  margin-right: auto;
+
+  }
+h1 {
+  display: inline;
+  font-size: 50px;
+}
+  a {
+  text-decoration: none;
+  color: blue;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  main#battle-arena {
+    text-align: center;
+    margin: 50px 10px 10px 10px;
+  }
