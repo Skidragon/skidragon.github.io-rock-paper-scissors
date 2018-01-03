@@ -13,6 +13,7 @@ header {
 }
 h1 {
   font-size: 32px;
+
 }
 
 .grid {
@@ -75,6 +76,11 @@ main {
   display: flex;
   justify-content: center;
   grid-row: 2 / 3;
+}
+#vs-img {
+  height: 100px;
+  width: 150px;
+  align-self: center;
 }
 .buttons-container {
   display: flex;
