@@ -10,53 +10,44 @@
 
 <body>
 
+  <div class="wrapper">
+    <aside>
 
-
-  <div class = "grid">
-  <header>
-    <h1>Rock, Paper, Scissors</h1>
-  </header>
-  <aside>
-    <ul>
-      <li><a href="#">Character Backstories</a></li>
-      <li><a href="#">Credits</a></li>
-    </ul>
-  </aside>
-
-
-
-
-  <main>
-    <div class="characters-container">
-      <img src="media/rock.png" alt="Rock" id="rock" class="player-sizes player-highlight character-selection">
-
-      <img src="media/paper.png" alt="Paper" id="paper" class="player-sizes player-highlight character-selection">
-
-      <img src="media/scissors.png" alt="Scissors" id="scissors" class="player-sizes player-highlight character-selection">
+    </aside>
+    <div class = "title-battle-arena-container">
+    <header>
+      <h1 class = "title">Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+      <div class = "characters-container">
+      <img src="media/rock.png" alt="paper" class = "character-adjustments character-highlights character" id = "rock">
+      <img src="media/paper.png" alt="paper" class = "character-adjustments character-highlights character" id = "paper">
+      <img src="media/scissors.png" alt="paper" class = "character-adjustments character-highlights character" id = "scissors">
     </div>
+    <div class = "battle-arena-container">
 
-    <div class="battle-arena">
-      <img src="" alt="Player" id="player-spot" class="player-sizes">
-      <img src='media/vs.png' alt = 'vs' id='vs-img'>
-      <img src="" alt="Computer" id="computer-spot" class="player-sizes">
+      <img src="#" alt="Player Spot" class = "character-adjustments" id = "player-spot">
+      <img src="media/vs.png" alt="VS" class = "character-adjustments" id = "vs-img">
+      <img src="#" alt="Computer Spot" class = "character-adjustments" id = "player-spot">
     </div>
-
-    <div class="buttons-container">
-      <input type="submit" value="Start Match" class='primary-btn' id="start-match-btn">
-    </div>
-  </main>
-
-  <footer class="score-board-container">
-    <div class="player-score-container">
-      <h2>Player Score:</h2>
-    </div>
-    <div class="computer-score-container">
-      <h2>Computer Score:</h2>
-    </div>
-  </footer>
-
+<div class="platform">
+<input type = "button" class="start-match-btn" value="Begin Battle">
 </div>
-<!-- grid ends -->
+    </main>
+  </div>
+  </div>
+<!--end of wrapper-->
+<footer class = "scoreboard-container">
+  <div class = "player-scoreboard">
+    <h1>Player Score:</h1>
+    <p class = "score" id = "player-score">0</p>
+  </div>
+  <div class = "computer-scoreboard">
+    <h1> Computer Score:</h1>
+    <p class = "score" id = "computer-score">0</p>
+  </div>
+
+</footer>
   <script src="main.js"></script>
 </body>
 

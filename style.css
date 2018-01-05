@@ -4,33 +4,27 @@
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  background-color: grey;
+body {
+  background: lightblue;
 }
-h1 {
+
+.title {
   font-size: 32px;
-
+  margin-top: 10px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 200px 3fr;
-  grid-template-rows: 100px 3fr 1fr;
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
   height: 100%;
-  padding-top: 10px
+  background: lightblue;
 }
 /*sidebar starts*/
-
 aside {
-  grid-column: 1 / 2;
-  grid-row: 1 / 4;
-  background-color: #fffca8;
-  border-style: none dashed none none;
-  border-width: 1px;
+  flex-basis: 25%;
+
+  background: tomato;
 }
 
 ul>li {
@@ -58,68 +52,58 @@ a:hover {
 }
 /* sidebar end */
 
-main {
-  display: grid;
-  grid-template-rows: 1fr 1fr .5fr;
-  justify-content: center;
-  grid-gap: 2em;
+.title-battle-arena-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 75%;
 }
-/* nested in main starts*/
 .characters-container {
   display: flex;
   justify-content: center;
-  grid-row: 1 / 2;
-  margin-top: 10px;
+  margin: 40px;
 }
-
-.battle-arena {
-  display: flex;
-  justify-content: center;
-  grid-row: 2 / 3;
-}
-#vs-img {
-  height: 100px;
-  width: 150px;
-  align-self: center;
-}
-.buttons-container {
-  display: flex;
-  justify-content: center;
-  grid-row: 3 / 4;
-}
-/* nested in main ends */
-
-.player-sizes {
-  width: 150px;
+.character-adjustments {
   height: 150px;
-  margin-left: 20px;
+  margin: 0px 10px;
 }
-
-.player-highlight:hover, .player-highlight:active {
-  background-color: red;
-  border-radius: 10px;
-  cursor: crosshair;
-}
-
-
-
-footer.score-board-container {
+.battle-arena-container {
   display: flex;
   justify-content: center;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
+}
+.character-highlights:hover {
+  background: red;
+  border-radius: 5px;
+}
+.platform {
+  display: flex;
+  height: 100px;
+  background: yellow;
+}
+.start-match-btn {
+  margin: auto;
   height: 50px;
-  background-color: #afafaf;
 }
-.player-score-container {
-  height: 100%;
-  width: 50%;
-  background: lightblue;
+
+footer {
+  display: flex;
+  height: 150px;
+  background: red;
 }
-.computer-score-container {
-  height: 100%;
+.player-scoreboard {
+  display: flex;
+  flex-direction: column;
   width: 50%;
   background: orange;
+}
+.computer-scoreboard {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background: pink;
+}
+.score {
+  margin: auto;
+  font-size: 100px;
+  font-weight: bold;
 }

@@ -1,4 +1,4 @@
-const characters = document.querySelectorAll(".character-selection");
+const characters = document.querySelectorAll(".character");
 const playerSpot = document.getElementById("player-spot");
 const computerSpot = document.getElementById("computer-spot");
 const startMatchBtn = document.getElementById("start-match-btn")
