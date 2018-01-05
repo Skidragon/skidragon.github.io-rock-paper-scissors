@@ -11,7 +11,6 @@ function computerSelection() {
 }
 
 //make a strength and weakness function of character
-
 function playerSelection(backgroundColor) {
 for (let i = 0; i < characters.length; i++) {
   characters[i].addEventListener("click", function(event) {
