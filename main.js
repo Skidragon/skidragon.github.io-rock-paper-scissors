@@ -1,10 +1,9 @@
 const characters = document.querySelectorAll(".character");
 const playerSpot = document.getElementById("player-spot");
 const computerSpot = document.getElementById("computer-spot");
-const startMatchBtn = document.getElementById("start-match-btn")
+const startMatchBtn = document.getElementById("start-match-btn");
 console.log(characters);
 
-let player1 = "";
 
 function computerSelection() {
   const choice = Math.floor(Math.random() * characters.length);
